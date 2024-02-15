@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package UiSettings;
+package org.example.main.UIConfigs;
 
 import java.awt.Dimension;
 import java.awt.Toolkit;
@@ -27,6 +27,8 @@ public class UiSettings {
         
         // Set the location of the frame
         frame.setLocation(x, y);
+        
+      
     }
     
 }
