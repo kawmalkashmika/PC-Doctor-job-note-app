@@ -24,7 +24,7 @@ import org.example.main.model.MyDataModel;
 public class MainForm extends javax.swing.JFrame {
     private ArrayList<Laptop> laptopList=new ArrayList<>();
     private MyDataModel model;
-    private static JobNoteDTO jobNoteDTO;
+    private static JobNoteDTO jobNoteDTO=new JobNoteDTO();
 
     /**
      * Creates new form MainForm
@@ -389,8 +389,11 @@ public class MainForm extends javax.swing.JFrame {
     }//GEN-LAST:event_txtContactNumberActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-           jobNoteDTO.setCustomerName(txtName.getText());
-           jobNoteDTO.setContactNumber(txtContactNumber.getText());
+        if(txtName.getText()!=null && txtContactNumber.getText()!=null){
+              jobNoteDTO.setCustomerName(txtName.getText());
+             jobNoteDTO.setContactNumber(txtContactNumber.getText());
+        }
+        
         
             Laptop laptop=new Laptop();
             laptop.setBrand(txtBrand.getText());
