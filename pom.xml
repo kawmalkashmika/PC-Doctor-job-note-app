@@ -15,7 +15,14 @@
     </properties>
 
     <dependencies>
-       
+
+        <dependency>
+            <groupId>com.itextpdf</groupId>
+            <artifactId>itext7-core</artifactId>
+            <version>7.0.2</version>
+            <type>pom</type>
+        </dependency>
+
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
