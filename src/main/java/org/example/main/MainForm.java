@@ -26,6 +26,10 @@ import java.awt.event.ActionListener;
 import java.io.Console;
 import java.io.FileNotFoundException;
 import java.net.MalformedURLException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -391,10 +395,42 @@ public class MainForm extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         try {
-            // TODO add your handling code here:
-            printJobNote("hii", "hii");
-        } catch (FileNotFoundException ex) {
-            Logger.getLogger(MainForm.class.getName()).log(Level.SEVERE, null, ex);
+
+            Connection dbConnection = DBConnection.getDBConnection();
+            String SQL1="INSERT INTO `pc_doctor`.`job_note` (`CUSTOMER_NAME`, `CUSTOMER_CONTACT_NUMBER`, `IS_ACTIVE`) VALUES ('"+ jobNoteDTO.getCustomerName()+"', '"+jobNoteDTO.getContactNumber()+"', '1');";
+            int generatedId=-1;
+            PreparedStatement preparedStatement1 = dbConnection.prepareStatement(SQL1,PreparedStatement.RETURN_GENERATED_KEYS);
+            int i = preparedStatement1.executeUpdate();
+            if(i==1){
+                ResultSet generatedKeys = preparedStatement1.getGeneratedKeys();
+                if(generatedKeys.next()){
+                    generatedId=generatedKeys.getInt(1);
+                }
+
+            }
+
+            if(!laptopList.isEmpty()){
+                for(Laptop laptop:laptopList){
+                    int battery=laptop.isBattery()?1:0;
+                    int charger=laptop.isCharger()?1:0;
+                    int dvd=laptop.isDvd()?1:0;
+                    int hard=laptop.isHardDisk()?1:0;
+                    int ram=laptop.isRam()?1:0;
+                    String SQL2="INSERT INTO `pc_doctor`.`laptop` (`JOB_NOTE_ID`, `FAULT`, `BATTERY`, `CHARGER`, `DVD_ROM`, `HARD_DISK`, `RAM`) VALUES ('"+generatedId+"', '"+laptop.getFalult()+"', '"+battery+"', '"+charger+"', '"+dvd+"', '"+hard+"', '"+ram+"')";
+                    PreparedStatement preparedStatement = dbConnection.prepareStatement(SQL2);
+                    int i1 = preparedStatement.executeUpdate();
+                    printJobNote(String.valueOf(generatedId));
+                }
+            }else{
+
+            }
+
+
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
 
 
@@ -479,8 +515,8 @@ public class MainForm extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void printJobNote(String name, String id) throws FileNotFoundException {
-        String path = "Job_Note.pdf";
+    private void printJobNote(String JobNoteId) throws FileNotFoundException {
+        String path = "Job_Note"+JobNoteId+".pdf";
         PdfWriter pdfWriter = new PdfWriter(path);
         PdfDocument pdfDocument = new PdfDocument(pdfWriter);
         pdfDocument.setDefaultPageSize(PageSize.A5);
@@ -550,14 +586,51 @@ public class MainForm extends javax.swing.JFrame {
 
         Paragraph emptySpace = new Paragraph().setHeight(10);
 
+        float eightColumnWidth[]={colwidth/4,colwidth/4,colwidth/4,colwidth/4};
+        Table table2=new Table(eightColumnWidth);
+        Paragraph TopicParagraph = new Paragraph(new Text("Job note").setFontSize(12)).setHeight(10);
+        table2.addCell(new Cell().setBackgroundColor(Color.BLACK).add("Brand").setFontColor(Color.WHITE));
+        table2.addCell(new Cell().setBackgroundColor(Color.BLACK).add("Model").setFontColor(Color.WHITE));
+        table2.addCell(new Cell().setBackgroundColor(Color.BLACK).add("Fault").setFontColor(Color.WHITE));
+        table2.addCell(new Cell().setBackgroundColor(Color.BLACK).add("Equipments").setFontColor(Color.WHITE));
 
-       // Table table2=new Table();
+        for (Laptop laptop:laptopList){
+            table2.addCell(new Cell().add(laptop.getBrand()));
+            table2.addCell(new Cell().add(laptop.getModel()));
+            table2.addCell(new Cell().add(laptop.getFalult()));
+            StringBuilder stringBuilder=new StringBuilder("");
+            if(laptop.isHardDisk()){
+                stringBuilder.append("Hard Disk ");
+            }
+            if(laptop.isDvd()){
+                stringBuilder.append("DVD ROM ");
+            }
+            if(laptop.isRam()){
+              stringBuilder.append("RAM ");
+            }
+            if(laptop.isBattery()){
+               stringBuilder.append("Battery ");
+            }
+            if(laptop.isCharger()){
+                stringBuilder.append("Charger ");
+            }
+
+            table2.addCell(new Cell().add(stringBuilder.toString()));
+
+        }
+
+
+
+
+
 
 
 
         document.add(table);
         document.add(emptySpace);
         document.add(table1);
+        document.add(emptySpace);
+        document.add(table2);
 
 
 
