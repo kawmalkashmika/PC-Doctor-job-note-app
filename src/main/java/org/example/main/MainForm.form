@@ -49,77 +49,78 @@
               <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
-                          <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jLabel5" alignment="0" min="-2" pref="46" max="-2" attributes="0"/>
-                              <Component id="jLabel4" alignment="0" min="-2" pref="123" max="-2" attributes="0"/>
-                              <Component id="jLabel8" alignment="0" min="-2" pref="46" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jScrollPane1" min="-2" pref="251" max="-2" attributes="0"/>
-                              <Component id="txtContactNumber" min="-2" pref="251" max="-2" attributes="0"/>
-                              <Component id="txtName" min="-2" pref="251" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="checkBattery" min="-2" pref="85" max="-2" attributes="0"/>
-                                              <Component id="checkDvd" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
-                                              <Component id="checkHard" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
-                                              <Component id="checkCharger" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
-                                              <Component id="checkRam" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
-                                          </Group>
-                                          <EmptySpace pref="94" max="32767" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="1" attributes="0">
-                                          <EmptySpace max="32767" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jLabel7" min="-2" pref="46" max="-2" attributes="0"/>
-                                              <Component id="jLabel6" min="-2" pref="46" max="-2" attributes="0"/>
-                                          </Group>
-                                          <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="txtModel" pref="246" max="32767" attributes="0"/>
-                                      <Component id="txtBrand" max="32767" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                      </Group>
-                      <Group type="102" attributes="0">
                           <EmptySpace max="32767" attributes="0"/>
                           <Component id="jLabel3" min="-2" pref="222" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="121" max="-2" attributes="0"/>
                           <Component id="lblDate" min="-2" pref="184" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="jButton3" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jLabel4" alignment="0" min="-2" pref="123" max="-2" attributes="0"/>
+                                      <Component id="jLabel8" alignment="0" min="-2" pref="46" max="-2" attributes="0"/>
+                                      <Component id="jLabel6" min="-2" pref="46" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jScrollPane1" min="-2" pref="251" max="-2" attributes="0"/>
+                                      <Component id="txtContactNumber" min="-2" pref="251" max="-2" attributes="0"/>
+                                      <Component id="txtBrand" min="-2" pref="251" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="checkBattery" min="-2" pref="85" max="-2" attributes="0"/>
+                                      <Component id="checkDvd" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                      <Component id="checkCharger" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                      <Component id="checkRam" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                      <Component id="checkHard" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace pref="116" max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="jLabel5" min="-2" pref="46" max="-2" attributes="0"/>
+                                      <Component id="jLabel7" min="-2" pref="46" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="txtModel" max="32767" attributes="0"/>
+                              <Component id="txtName" min="-2" pref="251" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                   </Group>
-                  <EmptySpace min="32" pref="32" max="-2" attributes="0"/>
+                  <EmptySpace min="27" pref="27" max="-2" attributes="0"/>
               </Group>
-              <Component id="jSeparator2" alignment="1" max="32767" attributes="0"/>
               <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jSeparator3" max="32767" attributes="0"/>
-                      <Group type="102" attributes="0">
-                          <Component id="jScrollPane2" max="32767" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
+                  <Component id="jSeparator3" max="32767" attributes="0"/>
               </Group>
+              <Component id="jScrollPane2" alignment="0" max="32767" attributes="0"/>
               <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  <Component id="jSeparator2" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="157" max="-2" attributes="0"/>
                   <Component id="jButton2" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="339" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+                  <Component id="jButton4" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -139,49 +140,51 @@
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="txtContactNumber" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel4" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
-                      <Component id="txtBrand" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel6" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                      <Component id="jLabel5" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                      <Component id="txtName" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="txtModel" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel7" alignment="1" min="-2" pref="25" max="-2" attributes="0"/>
+                      </Group>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel5" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
-                          <Component id="txtName" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtModel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtBrand" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel6" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="jLabel7" alignment="1" min="-2" pref="25" max="-2" attributes="0"/>
                   </Group>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-                      </Group>
+                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="jLabel8" min="-2" pref="25" max="-2" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="jLabel8" min="-2" pref="25" max="-2" attributes="0"/>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="checkBattery" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="checkDvd" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="checkHard" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="checkCharger" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" max="-2" attributes="0"/>
-                                  <Component id="checkRam" min="-2" pref="20" max="-2" attributes="0"/>
-                              </Group>
-                              <Component id="jScrollPane1" alignment="1" max="32767" attributes="0"/>
-                          </Group>
+                          <Component id="checkBattery" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="checkDvd" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="checkHard" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="checkCharger" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" max="-2" attributes="0"/>
+                          <Component id="checkRam" min="-2" pref="20" max="-2" attributes="0"/>
                       </Group>
+                      <Component id="jScrollPane1" alignment="1" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="jSeparator2" min="-2" pref="11" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                   <Component id="jScrollPane2" pref="193" max="32767" attributes="0"/>
-                  <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                  <Component id="jButton2" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jButton2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -301,7 +304,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="cc" red="33" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="+ADD JOB NOTE"/>
+            <Property name="text" type="java.lang.String" value="ADD JOB NOTE"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
@@ -397,6 +400,35 @@
             </Component>
           </SubComponents>
         </Container>
+        <Component class="javax.swing.JButton" name="jButton3">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="ff" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Arial Black" size="12" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="-CLEAR"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton4">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Arial Black" size="18" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="ff" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="REMOVE JOB NOTE"/>
+            <Property name="actionCommand" type="java.lang.String" value="-CLEAR JOB NOTE"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton4ActionPerformed"/>
+          </Events>
+        </Component>
       </SubComponents>
     </Container>
   </SubComponents>

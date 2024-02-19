@@ -39,7 +39,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>org.example.Login</mainClass>
+                            <mainClass>org.example.main.Login</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
